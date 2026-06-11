@@ -561,15 +561,14 @@
 
 .tags {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  justify-content: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .tag {
-  padding: 14px 24px;
+  padding: 16px 20px;
   background: rgba(35, 33, 34, 0.5);
   border: 1px solid rgba(215, 55, 45, 0.3);
   color: var(--white);
@@ -581,20 +580,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
+  min-height: 60px;
 }
 
 @media (max-width: 768px) {
   .tags {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    max-width: 100%;
   }
 
   .tag {
     padding: 14px 12px;
     font-size: 11px;
     letter-spacing: 0.5px;
-    min-height: 60px;
+    min-height: 65px;
     line-height: 1.4;
   }
 }
@@ -716,16 +716,21 @@
     min-height: 200px;
     max-height: 250px;
     width: 100%;
+    max-width: 100%;
   }
 
   .visual-overlay {
     padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .visual-text {
-    font-size: 28px;
+    font-size: 26px;
     letter-spacing: 1px;
     word-break: break-word;
+    max-width: 100%;
   }
 }
 
